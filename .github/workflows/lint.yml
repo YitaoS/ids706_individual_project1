@@ -7,7 +7,7 @@ on:
       - completed
 
 jobs:
-  format:
+  lint:
     runs-on: ubuntu-latest
 
     steps:

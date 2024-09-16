@@ -1,7 +1,9 @@
 # IDS706 Mini Project
-![CI Status](https://github.com/YitaoS/ids706_individual_project1/actions/workflows/ci.yml/badge.svg)
-![Install](https://github.com/YitaoS/ids706_individual_project1/actions/workflows/ci.yml/badge.svg?branch=main&event=push&job=Install)
-![Tests](https://github.com/YitaoS/ids706_individual_project1/actions/workflows/ci.yml/badge.svg?branch=main&event=push&job=Run_all_tests)
+![CICD Status](https://github.com/YitaoS/ids706_individual_project1/actions/workflows/cd.yml/badge.svg)
+![Install](https://github.com/YitaoS/ids706_individual_project1/actions/workflows/install.yml/badge.svg)
+![Format](https://github.com/YitaoS/ids706_individual_project1/actions/workflows/format.yml/badge.svg?branch=main&event=push&job=Formats_code_with_Python_black)
+![Lint](https://github.com/YitaoS/ids706_individual_project1/actions/workflows/lint.yml/badge.svg?branch=main&event=push&job=Lints_code_with_Ruff)
+![Test](https://github.com/YitaoS/ids706_individual_project1/actions/workflows/test.yml/badge.svg?branch=main&event=push&job=Run_all_tests)
 
 ## Getting Started
 

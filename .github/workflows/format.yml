@@ -1,0 +1,14 @@
+name: Black
+
+on:
+  workflow_run:
+    workflows: ["Install"]
+    types:
+      - completed
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Format code
+        run: make format

@@ -1,0 +1,14 @@
+name: Ruff
+
+on:
+  workflow_run:
+    workflows: ["Black"]
+    types:
+      - completed
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: lint code
+        run: make lint

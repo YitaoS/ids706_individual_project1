@@ -1,5 +1,8 @@
 # IDS706 Mini Project
 ![CI Status](https://github.com/YitaoS/ids706_individual_project1/actions/workflows/ci.yml/badge.svg)
+[![Lint Status](https://gitlab.com/YitaoS/ids706_individual_project1/badges/<default-branch>/pipeline.svg?job=Install)](https://gitlab.com/<namespace>/<project>/-/jobs?job=Install)
+[![Format Status](https://gitlab.com/YitaoS/ids706_individual_project1/badges/<default-branch>/pipeline.svg?job=Lints-code-with-Ruff)](https://gitlab.com/<namespace>/<project>/-/jobs?job=lint)
+[![Test Status](https://gitlab.com/YitaoS/ids706_individual_project1/badges/<default-branch>/pipeline.svg?job=Install)](https://gitlab.com/<namespace>/<project>/-/jobs?job=lint)
 
 ## Getting Started
 

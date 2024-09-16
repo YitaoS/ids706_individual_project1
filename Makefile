@@ -1,4 +1,5 @@
 PYTHON_FILES := src tests
+FILES_TO_REMOVE = *.png report.md
 
 .PHONY: install format lint run report
 
@@ -32,6 +33,7 @@ clean:
 	find . -type d -name "__pycache__" -exec rm -r {} +
 	find . -type f -name "*.png" -delete
 	rm -f report.md
+	@git rm $(FILES_TO_REMOVE)
 
 check-format:
 	black --check $(PYTHON_FILES)

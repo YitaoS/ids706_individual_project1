@@ -31,9 +31,9 @@ test:
 clean:
 	find . -type f -name "*.pyc" -delete
 	find . -type d -name "__pycache__" -exec rm -r {} +
-	find . -type f -name "*.png" -delete
-	rm -f report.md
-	@git rm $(FILES_TO_REMOVE)
+	@git rm report.md
+	@git rm *.png
+	
 
 check-format:
 	black --check $(PYTHON_FILES)

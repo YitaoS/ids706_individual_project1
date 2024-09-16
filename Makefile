@@ -7,14 +7,14 @@ install:
 	pip install .[dev]
 
 format:
+	# Automatically format code using black
 	black $(PYTHON_FILES)
-
+	
 lint:
-	flake8 $(PYTHON_FILES) --count --select=E9,F63,F7,F82 --show-source --statistics
-	flake8 $(PYTHON_FILES) --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+	ruff check $(PYTHON_FILES)
 
 run:
-	python3 src/main.py
+	python3 src/script.py
 
 deploy:
 	git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -24,7 +24,8 @@ deploy:
 	git commit -m "Add report and images"
 
 test:
-	PYTHONPATH=src pytest -s tests/test_example.py
+	PYTHONPATH=src pytest -s tests
+	pytest --nbval descriptive_statistics.ipynb
 
 clean:
 	find . -type f -name "*.pyc" -delete
@@ -35,4 +36,4 @@ clean:
 check-format:
 	black --check $(PYTHON_FILES)
 
-ci: lint test check-format
+ci: lint format check-format test

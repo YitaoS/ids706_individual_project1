@@ -20,19 +20,19 @@ jobs:
       with:
         python-version: '3.9'
 
-    - name: Install dependencies
+    - name: Install
       run: |
         make install
 
-    - name: Lint with flake8
+    - name: Lints code with Ruff
       run: |
         make lint
 
-    - name: Format with black
+    - name: Formats code with Python black
       run: |
         make format
 
-    - name: Run Tests
+    - name: Run all tests
       run: |
         make test
 

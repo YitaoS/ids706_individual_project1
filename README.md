@@ -1,5 +1,5 @@
 # IDS706 Mini Project
-![CI Status](https://github.com/YitaoS/ids706_mini_project2/actions/workflows/ci.yml/badge.svg)
+![CI Status](https://github.com/YitaoS/ids706_individual_project1/actions/workflows/ci.yml/badge.svg)
 
 ## Getting Started
 

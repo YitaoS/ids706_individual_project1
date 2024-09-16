@@ -7,16 +7,21 @@ on:
       - completed
 
 jobs:
-  lint:
+  format:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
 
-    - name: lint code
-      run: make lint
+      - name: Install
+        run: |
+          make install
+
+      - name: lint code
+        run: |
+          make lint
